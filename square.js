@@ -1,7 +1,6 @@
 // Shows zeros of a quadratic function
 
 function quad(a, b, c){
-
     // Calculates delta for later
     let delta = Math.pow(b, 2) - 4 * a * c;
 
@@ -11,4 +10,4 @@ function quad(a, b, c){
     return {xo, xt};
 }
 
-export {quad}
+export { quad }

@@ -7,5 +7,13 @@ button.addEventListener("click", function(){
     let b = document.querySelector("#two").value;
     let c = document.querySelector("#three").value;
 
-    console.log(quad(a,b,c));
+    let result = quad(a,b,c);
+
+    if(isNaN(result[0])){
+        document.querySelector("#result").innerHTML = "Error!";
+    }
+    else{
+        document.querySelector("#result").innerHTML = "" + result[0] + " " + result[1];
+    }
+
 });

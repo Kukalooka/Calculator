@@ -11,3 +11,5 @@ function calc(mode, a, b)
             return a/b;
     }
 }
+
+export {calc}

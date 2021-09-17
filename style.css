@@ -98,12 +98,12 @@ h1 {
 
 #point {
     grid-area: point;
-    background-color: palegoldenrod;
+    background-color: darkorange;
 }
 
 #add {
     grid-area: add;
-    background-color: chocolate;
+    background-color:goldenrod;
 }
 
 #substract {
@@ -113,7 +113,7 @@ h1 {
 
 #multiply {
     grid-area: multiply;
-    background-color: darkorange;
+    background-color: chocolate;
 }
 
 #divide{

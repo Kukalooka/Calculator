@@ -8,3 +8,115 @@ h1 {
     text-align: center;
     color: orange;
 }
+
+#container{
+    width: 100%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#box {
+    display: grid;
+    grid-gap: 5px;
+
+    width: 400px;
+    height: 500px;
+
+    grid-template-areas: 
+        'result result result result'
+        'one two three add'
+        'four five six substract'
+        'seven eight nine multiply'
+        'zero zero point divide';
+}
+
+#result {
+    text-align: left;
+    grid-area: result;
+    padding-left: 50px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+#one {
+    grid-area: one;
+    background-color: orange;
+}
+
+#two {
+    grid-area: two;
+    background-color: orange;
+}
+
+#three {
+    grid-area: three;
+    background-color: orange;
+}
+
+#three {
+    grid-area: three;
+    background-color: orange;
+}
+
+#four {
+    grid-area: four;
+    background-color: orange;
+}
+
+#five {
+    grid-area: five;
+    background-color: orange;
+}
+
+#six {
+    grid-area: six;
+    background-color: orange;
+}
+
+#seven {
+    grid-area: seven;
+    background-color: orange;
+}
+
+#eight {
+    grid-area: eight;
+    background-color: orange;
+}
+
+#nine {
+    grid-area: nine;
+    background-color: orange;
+}
+
+#zero {
+    grid-area: zero;
+    background-color: orangered;
+}
+
+#point {
+    grid-area: point;
+    background-color: palegoldenrod;
+}
+
+#add {
+    grid-area: add;
+    background-color: chocolate;
+}
+
+#substract {
+    grid-area: substract;
+    background-color: darkgoldenrod;
+}
+
+#multiply {
+    grid-area: multiply;
+    background-color: darkorange;
+}
+
+#divide{
+    grid-area: divide;
+    background-color: brown;
+}

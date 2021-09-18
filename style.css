@@ -28,7 +28,7 @@ h1 {
         'one two three add'
         'four five six substract'
         'seven eight nine multiply'
-        'zero zero point divide';
+        'equals zero point divide';
 }
 
 #result {
@@ -93,7 +93,7 @@ h1 {
 
 #zero {
     grid-area: zero;
-    background-color: orangered;
+    background-color: orange;
 }
 
 #point {
@@ -119,4 +119,9 @@ h1 {
 #divide{
     grid-area: divide;
     background-color: brown;
+}
+
+#equals{
+    grid-area: equals;
+    background-color: orangered;
 }

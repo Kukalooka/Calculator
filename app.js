@@ -1,7 +1,7 @@
-import { calc } from "./normalcalc";
+import { calc } from "./normalcalc.js";
 import { quad } from "./square.js";
 
-let button = document.querySelector("#butt");
+buttest(document.querySelector("#container"));
 
 button.addEventListener("click", function(){
     // Gets the values from the input fields AFTER the user clicks on the button

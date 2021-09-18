@@ -12,4 +12,4 @@ function calc(mode, a, b)
     }
 }
 
-export {calc, buttest}
+export {calc}

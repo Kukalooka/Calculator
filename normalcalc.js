@@ -39,7 +39,7 @@ function clickable(box){
 
         }else{
             if(clear){
-                current += "0,";
+                current += "0.";
                 buttons[0].innerHTML = current;
                 clear = false;
                 point = true;
@@ -56,28 +56,24 @@ function clickable(box){
         nums.push(Number(current));
         operations.push("add");
         current = "";
-        buttons[0].innerHTML = "0";
     });
 
     buttons[13].addEventListener("click", function(){
         nums.push(Number(current));
         operations.push("substract");
         current = "";
-        buttons[0].innerHTML = "0";
     });
 
     buttons[14].addEventListener("click", function(){
         nums.push(Number(current));
         operations.push("multiply");
         current = "";
-        buttons[0].innerHTML = "0";
     });
 
     buttons[15].addEventListener("click", function(){
         nums.push(Number(current));
         operations.push("divide");
         current = "";
-        buttons[0].innerHTML = "0";
     });
 
     buttons[16].addEventListener("click", function(){

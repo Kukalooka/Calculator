@@ -1,13 +1,20 @@
 // Shows zeros of a quadratic function
 
-function quad(a, b, c){
-    // Calculates delta for later
-    let delta = Math.pow(b, 2) - 4 * a * c;
-
-    let xo = (-b - Math.sqrt(delta)) / (2 * a);
-    let xt = (-b + Math.sqrt(delta)) / (2 * a);
-
-    return [xo, xt];
+import { zero } from "./zero.js";
+function quad(a,b,c){
+    let amount = zero(a,b,c);
+    let result = b*b - 4*a*c;
+    if(amount > 1){
+        let x1 = Math.round((-b - Math.sqrt(result)) / 2 * a);
+        let x2 = Math.round((-b + Math.sqrt(result)) / 2 * a);
+        return [x1, x2];
+    }
+    else if(amount == 1){
+        let x1 = Math.round(-b / 2 * a);
+        return x1;
+    }
+    else{
+        return 0;
+    }
 }
-
-export { quad }
+export {quad}
